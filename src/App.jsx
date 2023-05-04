@@ -6,28 +6,19 @@ import Welcome from './welcome'
 import 'bootstrap/dist/css/bootstrap.css';
 import Home from './Home'
 import About from './About'
-import Form from './form'
-import Child from './Child'
 
 
 function App() {
-  // const userDetails = { firstName: "kiruthi", LastName: "kiruthika", phonenumber: 9576898074 }
-  // const getData = (data) => {
-  //   console.log("comming from child", data)
-  // }
-  const [user,setuser] = useState({ name: '', age: ""
-  })
-  const sendData = (user) => { setuser(user) }
+  const userDetails = { firstName: "kiruthi", LastName: "kiruthika", phonenumber: 9576898074 }
+  
+  
   return (
-    <div className='App'>
-      {/* <Form onSubmit={getData}></Form> */}
-      {/* <Home userDetails={userDetails}></Home><hr></hr>
-      <About firstName="Soumithra" LastName ="Magathi"></About> */}
-      <Child>sendData={sendData}</Child>
+    <div>
     
-   <div><strong>{user.name}</strong>
-        <strong>{user.age}</strong>
-      </div>
+      <Home userDetails={userDetails}></Home><hr></hr>
+      <About firstName ="Soumithra" LastName="Magathi"></About>
+      
+    
       </div>
   );
 }
